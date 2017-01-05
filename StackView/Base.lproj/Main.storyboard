@@ -1,26 +1,165 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="StackView" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yLE-f9-bwp">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="50"/>
+                                <color key="backgroundColor" red="0.84313725490196079" green="0.25098039215686274" blue="0.3411764705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Ouk-fm-KGW"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="zlv-xU-SSS">
+                                <rect key="frame" x="10" y="60" width="748" height="954"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="270" verticalHuggingPriority="270" translatesAutoresizingMaskIntoConstraints="NO" id="IZh-Tj-V7B">
+                                        <rect key="frame" x="54" y="0.0" width="640" height="783"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="261" image="chucks" translatesAutoresizingMaskIntoConstraints="NO" id="Erb-og-Ak5">
+                                                <rect key="frame" x="0.0" y="0.0" width="640" height="783"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="85m-jV-guq">
+                                        <rect key="frame" x="114" y="788" width="520" height="70"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="260" image="shoes1" translatesAutoresizingMaskIntoConstraints="NO" id="ZcE-2K-UqK">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="70"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="70" id="J6I-dc-c7G"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="260" image="shoes2" translatesAutoresizingMaskIntoConstraints="NO" id="HzY-no-0MW">
+                                                <rect key="frame" x="105" y="0.0" width="100" height="70"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="70" id="wGe-Ak-eKI"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="260" image="shoes3" translatesAutoresizingMaskIntoConstraints="NO" id="Zov-L9-cMm">
+                                                <rect key="frame" x="210" y="0.0" width="100" height="70"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="70" id="k3G-7z-S7o"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="260" image="shoes4" translatesAutoresizingMaskIntoConstraints="NO" id="Wab-2t-zMZ">
+                                                <rect key="frame" x="315" y="0.0" width="100" height="70"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="70" id="qwo-zy-sEC"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="260" image="shoes5" translatesAutoresizingMaskIntoConstraints="NO" id="CXN-4D-5AD">
+                                                <rect key="frame" x="420" y="0.0" width="100" height="70"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="70" id="51L-mp-FGS"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4DQ-r7-uah">
+                                        <rect key="frame" x="277.5" y="863" width="193" height="25.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="270" text="Chuck Tailor Shoes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rh8-DZ-AKY">
+                                                <rect key="frame" x="0.0" y="0.0" width="193" height="25.5"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
+                                                <color key="textColor" red="0.84313725490000002" green="0.25098039220000001" blue="0.3411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="fOl-bB-ufh">
+                                        <rect key="frame" x="0.0" y="893.5" width="748" height="19.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="270" text="Ref. 7463894 U.S.A Special Edition" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jcO-F2-Utj">
+                                                <rect key="frame" x="0.0" y="0.0" width="675.5" height="19.5"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$78" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iTu-Ih-EqC">
+                                                <rect key="frame" x="675.5" y="0.0" width="72.5" height="19.5"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                                <color key="textColor" red="0.36128053069114685" green="0.87852579355239868" blue="0.64159613847732544" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Gvo-kH-vLT">
+                                        <rect key="frame" x="0.0" y="918" width="748" height="36"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="240" verticalCompressionResistancePriority="760" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8RG-EW-FiW">
+                                                <rect key="frame" x="0.0" y="0.0" width="366.5" height="36"/>
+                                                <color key="backgroundColor" red="0.84313725490000002" green="0.25098039220000001" blue="0.3411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                <state key="normal" title="Like it"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zyt-UB-Juk">
+                                                <rect key="frame" x="381.5" y="0.0" width="366.5" height="36"/>
+                                                <color key="backgroundColor" red="0.36128053069999999" green="0.87852579360000005" blue="0.64159613849999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                <state key="normal" title="Buy"/>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="Qtc-BW-NiB">
+                                                <variation key="widthClass=compact" constant="72"/>
+                                                <variation key="heightClass=compact-widthClass=compact" constant="36"/>
+                                            </constraint>
+                                        </constraints>
+                                        <variation key="widthClass=compact" spacing="10"/>
+                                        <variation key="heightClass=compact-widthClass=compact" axis="horizontal"/>
+                                        <variation key="heightClass=regular-widthClass=compact" axis="vertical"/>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Gvo-kH-vLT" firstAttribute="leading" secondItem="zlv-xU-SSS" secondAttribute="leading" id="Fev-8j-YtD"/>
+                                    <constraint firstAttribute="trailing" secondItem="fOl-bB-ufh" secondAttribute="trailing" id="Zez-MN-ESN"/>
+                                    <constraint firstAttribute="trailing" secondItem="Gvo-kH-vLT" secondAttribute="trailing" id="brY-GY-6rd"/>
+                                    <constraint firstItem="fOl-bB-ufh" firstAttribute="leading" secondItem="zlv-xU-SSS" secondAttribute="leading" id="lVX-xV-GAB"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="yLE-f9-bwp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="E3I-cb-1Wc"/>
+                            <constraint firstItem="zlv-xU-SSS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="bWC-5R-S5C"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="zlv-xU-SSS" secondAttribute="bottom" constant="10" id="hbJ-TF-fmq"/>
+                            <constraint firstItem="yLE-f9-bwp" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="jhB-jw-N6f"/>
+                            <constraint firstAttribute="trailing" secondItem="yLE-f9-bwp" secondAttribute="trailing" id="lNd-iI-5tt"/>
+                            <constraint firstAttribute="trailing" secondItem="zlv-xU-SSS" secondAttribute="trailing" constant="10" id="xoe-Q4-aWZ"/>
+                            <constraint firstItem="zlv-xU-SSS" firstAttribute="top" secondItem="yLE-f9-bwp" secondAttribute="bottom" constant="10" id="yBd-Z8-fi7"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="117.1875" y="123.63281249999999"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="chucks" width="640" height="472"/>
+        <image name="shoes1" width="100" height="100"/>
+        <image name="shoes2" width="100" height="100"/>
+        <image name="shoes3" width="100" height="100"/>
+        <image name="shoes4" width="100" height="100"/>
+        <image name="shoes5" width="100" height="100"/>
+    </resources>
 </document>
